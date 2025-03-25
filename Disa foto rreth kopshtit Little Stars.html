@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+
+    <style>
+       /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2; /* Rozë e butë */
+    color: #4d004d;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Title Styling */
+h2 {
+    color: #ff1a75;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Activities Section */
+#activities {
+    background-color: #ffb3d9;
+    padding: 20px;
+    border-radius: 15px;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Images */
+.image-gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #ff3385;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        max-width: 90%;
+    }
+}
+
+
+    </style>
+     <section id="activities">
+        <h2>Disa Pamje rreth nesh</h2>
+        <div class="image-gallery">
+            <img src="pranimi.jpg" alt="Pranimi i femijeve">
+            <img src="dhoma1.jpg" alt="Dhoma e lojërave">
+            <img src="dhoma3.jpg" alt="Ambient edukativ">
+            <img src="dhome 5.jpg" alt="Dhomë për aktivitete">
+            <img src="dhoma6.jpg" alt="Këndi kreativ">
+        </div>
+    </section>
+</body>
+</html>
